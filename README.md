@@ -40,14 +40,23 @@ All he wants is a simple data visualization tool which he can access on daily ba
      - Dahboard uncovering sales order insights with latest data available
      - Sales team able to take better decisions and prove 10% cost saving of total spend.
      - Sales analysis stop data gathering manually in order to save 20% business time andreinvest it value added activity.
+   
+- #### Flowchart of project execution -
+
+  ![1_khhcniAryBdmmfJt0Zk0Lg](https://user-images.githubusercontent.com/118357991/231545034-7f6cc437-5683-44f1-92df-a671540ccae9.jpg)
+
+   
 
 ## Data Analysis using MySQL :
 
 Completed the Data discovery and then used mySQL for data analysis.
 
 SQL database dump is in db_dump.sql file above. Download db_dump.sql file to your local computer
+
 - Importing Data to MySQL workbench
+
 ![Screenshot (61)](https://user-images.githubusercontent.com/118357991/230953941-d5ce7cde-26ec-47fe-acb1-e499f9028da9.png) 
+
 The import of data is done from an already existing MySQL file. This file has to be loaded into MySQL workbench for further data analysis. 
 
 - Analysis of data by looking into different tables and reflecting garbage values
@@ -56,8 +65,23 @@ The import of data is done from an already existing MySQL file. This file has to
    
      `SELECT * FROM sales.market;`
      
+   And then we can check that transacation table we can see that ceratin negative value in amount which is not possible. and we can see that certain transactions are      in USD. Hence, filtration of that is also needed by converting into INR.
+     
+      `SELECT * FROM sales.transactions;`
+     
+ - Analysis of different SQL statement on data base
+     
+     1. To find of all customers records 
+     
+        `SELECT * FROM sales.customers;`
+      
+     2. To find total number of customers 
+     
+        `SELECT count(*) From sales.customers;`
 
-
+     3. To find transactions for Chennai market (market code for chennai is Mark001
+     
+        `SELECT * FROM sales.transactions where market_code='Mark001';`
 
 
 
