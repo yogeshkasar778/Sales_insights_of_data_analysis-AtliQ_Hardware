@@ -55,7 +55,10 @@ SQL database dump is in db_dump.sql file above. Download db_dump.sql file to you
 
 - Importing Data to MySQL workbench
 
-![Screenshot (61)](https://user-images.githubusercontent.com/118357991/230953941-d5ce7cde-26ec-47fe-acb1-e499f9028da9.png) 
+![Screenshot (2)](https://user-images.githubusercontent.com/118357991/233262007-c36f58cd-df19-42b5-b9cb-4d72c0ef64a4.png)
+
+![Screenshot (3)](https://user-images.githubusercontent.com/118357991/233262064-b1fb8f0f-8c16-402d-adac-07784b81a2fe.png)
+
 
 The import of data is done from an already existing MySQL file. This file has to be loaded into MySQL workbench for further data analysis. 
 
@@ -140,4 +143,32 @@ The import of data is done from an already existing MySQL file. This file has to
       `SELECT SUM(sales.transactions.sales_amount) FROM sales.transactions INNER JOIN sales.date ON sales.transactions.order_date=sales.date.date where sales.date.year=2020 and sales.transactions.market_code="Mark002";` 
 
 Similarly, if we want different of any other particular city the market code of that city is used on the mysql workbench.
+
+## Data Cleaning and ETL (Extract, Transform, Load):
+In this process, we are work on data cleaning and ETL.
+
+ Step 1: Connect the MySQL database with the PowerBI desktop.
+ 
+ Step 2: Loading data into the Power BI deskstop.
+         This step load all the tables and created in the data base. This load option will connect with the SQL and pull all the records into power BI environment.
+         
+         In that model view looking up for model which form the star schema.
+         
+ ![Screenshot (4)](https://user-images.githubusercontent.com/118357991/233265427-94285bbf-79e6-446f-bd72-dc7c220e0680.png)
+
+ Setp 3: Transform data with the help of Power Query
+         
+         Perform filtration in market’s table —
+         
+         In the tables perform when we click on the transform data option, we are directed to Power query editor. Power query editor is where we perform out ETL. Here we can perform data transformation i.e. Data Cleaning/ Data Wrangling/ Data Munging.
+
+
+
+
+
+
+
+
+
+
 
