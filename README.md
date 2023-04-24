@@ -18,6 +18,7 @@
 ## Problem Statement :
 
 In this project performed India based AtliQ hardware company sales insights - A Data Analysis project. 
+
 Developed ETL mappings using SQL to extract the data from unstructured data and transformed it to the staging area to conduct data cleaning and design star schema data model on Power BI. Developed a Power BI dashboard to perform analysis, producing quantitative visualizations in Power BI to draw valuable insights based on different parameters affecting the company performance year on year and further provide business solutions.
 
 AtliQ Hardware is a company which supplies computer hardware and peripherals to many of clients such as excel stores, surge stories across India. AtliQ Hardware head office is situated in Delhi, India and they have many regional office through out the India.
